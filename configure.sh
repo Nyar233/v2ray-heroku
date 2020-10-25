@@ -22,16 +22,12 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "clients": [
                     {
                         "id": "$UUID",
-                        "level": 0,
-                        "email": "n1co.co@yandex.ru"
+                        "alterId": 64
                     }
                 ]
             },
             "streamSettings": {
-                "network": "ws",
-                "security": "none",
-                "wsSettings": {
-                    "path": "/" // 必须换成自定义的 PATH，需要和分流的一致
+                "network": "ws"
             }
         }
     ],
