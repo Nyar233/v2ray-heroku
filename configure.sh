@@ -22,12 +22,17 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "clients": [
                     {
                         "id": "$UUID",
-                        "alterId": 64
+                        "level": 0,
+                        "email": "n1co.co@yandex.ru"
                     }
-                ],
+                ]
             },
             "streamSettings": {
-                "network": "ws"
+                "network": "ws",
+                "security": "none",
+                "wsSettings": {
+                    "acceptProxyProtocol": true,
+                    "path": "/"
             }
         }
     ],
