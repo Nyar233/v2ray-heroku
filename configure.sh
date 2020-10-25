@@ -31,8 +31,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "acceptProxyProtocol": true,
-                    "path": "/"
+                    "path": "/" // 必须换成自定义的 PATH，需要和分流的一致
             }
         }
     ],
